@@ -1,0 +1,47 @@
+<!-- This is a preferential based to-do list -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-do list</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body{
+            background-image: url("water-blue.jpg");
+        }
+    </style>
+</head>
+<body>    
+    <p id="left"></p>
+    <p id="right"></p>
+    
+    <br>
+    <div id="items">        
+        <input type="text" id="title" placeholder="Add new item" maxlength="30" required>
+        <button type="submit" id="mybtn" onclick="newElement()">SAVE</button>
+    </div>
+    
+    <div id="boxes">
+        <fieldset>
+            <legend><b>ONGOING</b></legend>
+            <ul id="pending">
+                <li>Buy Groceries</li>
+                <li>Hit the gym</li>
+            </ul>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend><b>COMPLETED</b></legend>
+            <ul id="completed">
+                <li>Change lens</li>
+                <li>Fix motor</li>
+            </ul>
+        </fieldset>
+    </div>
+    
+    <script src="./script.js">
+    </script>
+</body>
+</html>
